@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+out/
+lib/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# MCP config (contains credentials)
+.mcp.json
+
+# Misc
+.cache/
+.temp/
+
+# Local-only dev docs (not shipped)
+CLAUDE.md
+docs/superpowers/
+
+# Local-only demo seeding tooling (not shipped)
+scripts/seed-demo.mjs

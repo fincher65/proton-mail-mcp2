@@ -1,0 +1,72 @@
+{
+  "name": "proton-mail-mcp2",
+  "version": "1.0.2",
+  "description": "Unofficial MCP server for Proton Mail (not affiliated with Proton AG) — send, read, search, and organize email over SMTP and IMAP",
+  "mcpName": "io.github.sethbang/proton-mail-mcp",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "proton",
+    "proton-mail",
+    "protonmail",
+    "email",
+    "imap",
+    "smtp",
+    "nodemailer",
+    "claude",
+    "ai-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sethbang/proton-mail-mcp.git"
+  },
+  "homepage": "https://github.com/sethbang/proton-mail-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/sethbang/proton-mail-mcp/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "type": "module",
+  "bin": {
+    "proton-mail-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "lint": "eslint src/",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@types/sanitize-html": "^2.16.1",
+    "html-to-text": "^10.0.0",
+    "imapflow": "^1.3.4",
+    "marked": "^18.0.4",
+    "nodemailer": "^8.0.5",
+    "sanitize-html": "^2.17.4"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^25.9.1",
+    "@types/nodemailer": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
+    "@typescript-eslint/parser": "^8.58.2",
+    "@vitest/coverage-v8": "^4.1.7",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  }
+}
